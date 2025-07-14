@@ -19,7 +19,7 @@ Designed to run **headless** and continuously, the system integrates real-time c
 
 - **Graph-based state controller** for navigating in-game menus
 - **Computer vision** (OCR + HSV filtering) for detecting game state and screen regions
-- **Bluetooth controller emulation** using `nxbt` + BlueZ (Linux only)
+- **Bluetooth controller emulation** using `nxbt`(Linux only)
 - **Multithreaded frame capture** for real-time screen analysis
 - Fault-tolerant design with recovery logic for common failure cases
 
