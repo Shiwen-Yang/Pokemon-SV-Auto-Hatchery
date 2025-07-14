@@ -1,12 +1,12 @@
 # 🎮 AutoPoke_v1: Pokémon Violet Egg Hatching Automation
 
-This project automates egg collection and hatching in *Pokémon Scarlet and Violet* using **Python**, **OpenCV**, and **Bluetooth controller emulation** via the [`nxbt`](https://github.com/nhasian/nxbt) library, which interfaces with **BlueZ** on Linux.
+This project automates egg collection and hatching in *Pokémon Scarlet and Violet* using **Python**, **OpenCV**, and **Bluetooth controller emulation** via the [`nxbt`](https://github.com/Brikwerk/nxbt) library, which interfaces with **BlueZ** on Linux.
 
 Designed to run **headless** and continuously, the system integrates real-time computer vision, controller macros, and a custom state controller to navigate in-game menus and actions. The system has operated **24/7 for 6+ months** with >99% uptime.
 
 ---
 
-## 🧠 Project Goals
+## Project Goals
 
 - Automate **egg collection** by simulating picnic setup, sandwich crafting, and basket checking
 - Automate **egg hatching** by transferring eggs from storage and moving in-game to trigger hatching
@@ -15,17 +15,17 @@ Designed to run **headless** and continuously, the system integrates real-time c
 
 ---
 
-## ⚙️ Key Features
+## Key Features
 
-- 🧭 **Graph-based state controller** for navigating in-game menus
-- 📸 **Computer vision** (OCR + HSV filtering) for detecting game state and screen regions
-- 🎮 **Bluetooth controller emulation** using `nxbt` + BlueZ (Linux only)
-- 🧵 **Multithreaded frame capture** for real-time screen analysis
-- 💥 Fault-tolerant design with recovery logic for common failure cases
+- **Graph-based state controller** for navigating in-game menus
+- **Computer vision** (OCR + HSV filtering) for detecting game state and screen regions
+- **Bluetooth controller emulation** using `nxbt` + BlueZ (Linux only)
+- **Multithreaded frame capture** for real-time screen analysis
+- Fault-tolerant design with recovery logic for common failure cases
 
 ---
 
-## 🏗️ System Overview
+## System Overview
 
 ### Egg Collection Pipeline
 - Starts picnic
@@ -41,22 +41,10 @@ Designed to run **headless** and continuously, the system integrates real-time c
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Python 3**
 - **OpenCV** (image processing and ROI detection)
 - **Pytesseract / OCR** (text recognition)
 - **NumPy**, **threading**
 - **nxbt** (Switch controller emulation)
-- **BlueZ** (Linux Bluetooth stack)
-
-> Note: This project runs **only on Linux** and requires a Bluetooth interface with [BlueZ](http://www.bluez.org/) support.
-
----
-
-## 🚀 Usage
-
-1. Ensure your system has BlueZ and meets `nxbt` dependencies
-2. Clone this repo and install Python requirements:
-   ```bash
-   pip install -r requirements.txt
