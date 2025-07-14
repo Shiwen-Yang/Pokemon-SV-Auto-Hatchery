@@ -1,4 +1,4 @@
-# 🎮 AutoPoke_v1: Pokémon Violet Egg Hatching Automation
+# Pokémon Violet Egg Hatching Automation
 
 This project automates egg collection and hatching in *Pokémon Scarlet and Violet* using **Python**, **OpenCV**, and **Bluetooth controller emulation** via the [`nxbt`](https://github.com/Brikwerk/nxbt) library, which interfaces with **BlueZ** on Linux.
 
